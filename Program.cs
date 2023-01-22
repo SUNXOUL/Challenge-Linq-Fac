@@ -23,21 +23,5 @@ public class Factorial_linq{
         {
             Console.WriteLine(item);
         }
-
-        //////////////////////////
-        int Range = 10;   
-        int ord1 = 0, ord2 = 0, ord3 = 0;   
-        IEnumerable<int> FibSeries = Enumerable.Range(1, Range).Select(a =>   
-        {   
-        ord1 = a == 1 ? 0 : ord2;   
-        ord2 = a == 1 ? 1 : ord3;   
-        ord3 = a == 1 ? 0 : ord1 + ord2;   
-        return ord3;   
-        }); 
-        
-        foreach (var item in FibSeries)
-        {
-            Console.WriteLine(item);
-        }
     }
 }
